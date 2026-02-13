@@ -1,0 +1,60 @@
+body {
+  font-family: "Google Sans", sans-serif;
+  background: #272757;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 420px;
+  background: #cfecf7;
+  padding: 40px;
+  margin: 60px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 7px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #182d32;
+}
+
+#msg {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+#msg.success {
+  color: green;
+}

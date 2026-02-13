@@ -1,0 +1,49 @@
+<!--form to capture student information based on behaviour, attendance and grades-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Performance Entry</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Student Performance Data Entry</h2>
+
+    <form id="studentForm" onsubmit="return validateForm()" method="post">
+
+      <label>Student ID</label>
+      <input type="text" id="sid" name="studentid" required>
+
+      <label>Student Name</label>
+      <input type="text" id="name" name="studentname" required>
+
+      <label>Internal Marks (0 - 100)</label>
+      <input type="number" id="marks" min="0" max="100" name="internalmarks" required>
+
+      <label>Attendance (%)</label>
+      <input type="number" id="attendance" min="0" max="100" name="attendance" required>
+
+      <label>Assignment Score (0 - 100)</label>
+      <input type="number" id="assignment" min="0" max="100" name="assignment" required>
+
+      <label>Behaviour Score(0-10)</label>
+      <input type="number" id="behaviour" min="0" max="10" name="behaviour" required>
+
+      <label>Extra Remarks</label>
+      <textarea id="remarks" name="remarks" rows="4" cols="50"></textarea>
+
+      <button type="submit">Submit Data</button>
+
+      <p id="msg"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
